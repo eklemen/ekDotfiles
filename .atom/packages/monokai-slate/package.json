@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/evan/d-1161127-24017-p26shh/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/evan/d-1161127-24017-p26shh/package.tgz",
+        "spec": "/tmp/evan/d-1161127-24017-p26shh/package.tgz",
+        "type": "local"
+      },
+      "/tmp/evan/apm-install-dir-1161127-24017-ljf44q"
+    ]
+  ],
+  "_from": "../d-1161127-24017-p26shh/package.tgz",
+  "_id": "monokai-slate@0.6.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/monokai-slate",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/evan/d-1161127-24017-p26shh/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/evan/d-1161127-24017-p26shh/package.tgz",
+    "spec": "/tmp/evan/d-1161127-24017-p26shh/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-1161127-24017-p26shh/package.tgz",
+  "_shasum": "8e73aba898f852cea44a5ea6d38096bbdc428c1d",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/evan/d-1161127-24017-p26shh/package.tgz",
+  "_where": "/tmp/evan/apm-install-dir-1161127-24017-ljf44q",
+  "bugs": {
+    "url": "https://github.com/hamxiaoz/monokai-slate/issues"
+  },
+  "dependencies": {},
+  "description": "A Monokai syntax theme variant with some subtle, relaxing tweaks",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/hamxiaoz/monokai-slate",
+  "keywords": [
+    "monokai"
+  ],
+  "license": "MIT",
+  "name": "monokai-slate",
+  "optionalDependencies": {},
+  "readme": "**NOTE this is based on the monokai-shade theme with some color/font tweaks**\n\n```\n# monokai-shade theme\n\nA Monokai syntax theme variant with some subtle, relaxing tweaks\n\nBased on the original Atom Monokai theme - https://github.com/kevinsawicki/monokai\n\n### Tweaks\n- increased line-height\n- changed default font\n- subtle, low-contrast invisible characters\n- toned down wrap-guide\n- changed bg color to match Monokai from Sublime\n- more padding in line number gutter\n- brighter highlighting\n```\n\n![](https://raw.githubusercontent.com/hamxiaoz/monokai-slate/master/preview/coffee.png)\n![](https://raw.githubusercontent.com/hamxiaoz/monokai-slate/master/preview/md.png)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamxiaoz/monokai-slate.git"
+  },
+  "theme": "syntax",
+  "version": "0.6.0"
+}

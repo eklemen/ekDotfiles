@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/evan/d-117021-21059-1k6x2ju/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/evan/d-117021-21059-1k6x2ju/package.tgz",
+        "spec": "/tmp/evan/d-117021-21059-1k6x2ju/package.tgz",
+        "type": "local"
+      },
+      "/tmp/evan/apm-install-dir-117021-21059-z67rs8"
+    ]
+  ],
+  "_from": "../d-117021-21059-1k6x2ju/package.tgz",
+  "_id": "language-htaccess@0.1.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/language-htaccess",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/evan/d-117021-21059-1k6x2ju/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/evan/d-117021-21059-1k6x2ju/package.tgz",
+    "spec": "/tmp/evan/d-117021-21059-1k6x2ju/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117021-21059-1k6x2ju/package.tgz",
+  "_shasum": "c26eb4dedcecd87033ae5d8f75bbd68df5d3265b",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/evan/d-117021-21059-1k6x2ju/package.tgz",
+  "_where": "/tmp/evan/apm-install-dir-117021-21059-z67rs8",
+  "bugs": {
+    "url": "https://github.com/muchweb/atom-language-htaccess/issues"
+  },
+  "dependencies": {},
+  "description": "HTACCESS language support in Atom",
+  "devDependencies": {},
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "http://atom.github.io/language-htaccess",
+  "license": "GPLv3+",
+  "name": "language-htaccess",
+  "optionalDependencies": {},
+  "readme": "# HTACCESS support in Atom\n\nAdds syntax highlighting to `.htaccess` files in Atom.\n\nContributions are greatly appreciated. Please fork this repository and open a\npull request to add snippets, make grammar tweaks, etc.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muchweb/atom-language-htaccess.git"
+  },
+  "version": "0.1.1"
+}

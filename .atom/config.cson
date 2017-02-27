@@ -1,0 +1,39 @@
+"*":
+  "atom-beautify":
+    css:
+      beautify_on_save: true
+    general:
+      _analyticsUserId: "dc250779-f663-4493-96a9-45b8e898864c"
+    html:
+      beautify_on_save: true
+    js:
+      beautify_on_save: true
+    json:
+      beautify_on_save: true
+    jsx:
+      beautify_on_save: true
+    scss:
+      beautify_on_save: true
+    typescript:
+      beautify_on_save: true
+  core:
+    disabledPackages: [
+      "atom-cursor-indent"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      ".vscode"
+    ]
+    projectHome: "/home/evan/work"
+    telemetryConsent: "limited"
+  editor:
+    showIndentGuide: true
+    softWrap: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "e1359eec-2c12-f22c-5d09-1fb396d89a85"

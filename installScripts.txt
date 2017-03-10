@@ -1,0 +1,64 @@
+# Install xcode-select CLI
+xcode-select --install
+
+# Install Brew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Install brew-cask
+brew install caskroom/cask/brew-cask
+
+# Brew packages
+brew install git
+brew install tree
+brew install fasd
+brew install yarn
+brew cask install google-chrome
+brew cask install slack
+
+# Configure Git
+git config --global user.name "eklemen"
+git config --global user.email ejklemen@gmail.com
+git config --global core.editor vim
+
+# Pull Prezto repo
+## HTTPS
+git clone --recursive https://github.com/eklemen/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+## SSH
+git clone --recursive git@github.com:eklemen/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+# Install/update ruby and RVM
+brew install gnupg gnupg2
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -L https://get.rvm.io | bash -s stable –ruby
+
+# Install python 3
+brew install python3
+
+# Install nvm
+# This should automatically add the export to ~/.zshrc (or ~/.zprofile)
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+
+# Install the latest version of node
+nvm install node
+
+
+# Install Yarn
+#brew update && brew install yarn
+## export PATH="$PATH:`yarn global bin`"   # add to .zshrc
+
+# Install sublime
+# https://www.sublimetext.com/3
+# https://packagecontrol.io/installation
+
+# Copy Sublime settings
+## First machine (with settings)
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+# mkdir ~/ekDotfiles
+mv User ~/ekDotfiles/
+ln -s ~/ekDotfiles/User
+
+## On new machine
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+rm -r User
+ln -s ~/ekDotfiles/User
+

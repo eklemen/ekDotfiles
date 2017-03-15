@@ -62,3 +62,5 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 rm -r User
 ln -s ~/ekDotfiles/User
 
+# Add global gitignore file
+ln -s ~/ekDotfiles/.gitignore_global ~/.gitignore_global

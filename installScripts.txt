@@ -20,6 +20,18 @@ git config --global user.name "eklemen"
 git config --global user.email ejklemen@gmail.com
 git config --global core.editor vim
 
+# Add ssh for git
+## https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+ssh-keygen -t rsa -b 4096 -C "ejklemen@gmail.com"
+## Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
+## Enter passphrase (empty for no passphrase): [Type a passphrase] # optional
+# Starts ssh-agent
+eval "$(ssh-agent -s)"
+ssh-add -K ~/.ssh/id_rsa
+# Copies the contents of the id_rsa.pub file to your clipboard
+pbcopy < ~/.ssh/id_rsa.pub
+# In github, settings -> SSH and GPG keys -> new SSH key/Add SSH key
+
 # Pull Prezto repo
 ## HTTPS
 git clone --recursive https://github.com/eklemen/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
@@ -40,7 +52,6 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | b
 
 # Install the latest version of node
 nvm install node
-
 
 # Install Yarn
 #brew update && brew install yarn

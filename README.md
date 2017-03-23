@@ -10,7 +10,7 @@ Finally getting around to piecing together some dotfiles/configs/setup scripts f
 
 #### Todo
 
-- [ ] Make directory and import Sublime settings
+- [x] Make directory and import Sublime settings
 - [ ] Create separate .sh for OSX default scripts
 - [ ] Create separate .sh for other general setup scripts (need to be bash executable)
   - [ ] Add `echo`'s for each step of installment

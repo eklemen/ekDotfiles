@@ -12,6 +12,8 @@ brew install git
 brew install tree
 brew install fasd
 brew install yarn
+brew install tmux
+brew install the_silver_searcher
 brew cask install google-chrome
 brew cask install slack
 
@@ -23,6 +25,16 @@ brew install php71 --with-apache
 ///////////////////////////////////////////////////////////////
 ///////////// Above has been added to brew.sh /////////////////
 ///////////////////////////////////////////////////////////////
+
+# tmux setup
+mkdir ~/.bin
+touch ~/.bin/tat && sudo vim ~/.bin/tat
+chmod u+x ~/.bin/tat
+## enter this into tat
+tmux new-session -As "$(basename "$PWD" | tr . -)"
+
+# make sure this in your ~/.zshenv`
+# `export PATH="$HOME/.bin:/usr/local/sbin:$HOME/bin/:$PATH" `
 
 sudo vim /etc/apache2/httpd.conf
 # Search for php5_module (should be near line 171) and edit the httpd.conf

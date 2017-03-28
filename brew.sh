@@ -15,6 +15,6 @@ if [[ `uname` == 'Darwin' ]]; then
     brew tap phinze/homebrew-cask
     brew tap homebrew/php
     brew install caskroom/cask/brew-cask
-    brew cask install google-chrome slack qlcolorcode qlstephen qlmarkdown quicklook-json quicklook-csv
+    brew cask install google-chrome slack tmux the_silver_searcher qlcolorcode qlstephen qlmarkdown quicklook-json quicklook-csv
     brew install php71 --with-apache
 fi

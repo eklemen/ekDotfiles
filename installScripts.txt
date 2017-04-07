@@ -26,12 +26,17 @@ brew install php71 --with-apache
 ///////////// Above has been added to brew.sh /////////////////
 ///////////////////////////////////////////////////////////////
 
-# tmux setup
-mkdir ~/.bin
-touch ~/.bin/tat && sudo vim ~/.bin/tat
-chmod u+x ~/.bin/tat
-## enter this into tat
-tmux new-session -As "$(basename "$PWD" | tr . -)"
+# Setting up VIM
+## Symlink vim and tmux to home ~
+ln -s vim/.vimrc ~/.vimrc
+ln -s vim/.tmux.conf ~/.tmux.conf
+ln -s vim/.bin ~/.bin
+* ## tmux setup
+* mkdir ~/.bin
+* touch ~/.bin/tat && sudo vim ~/.bin/tat
+* chmod u+x ~/.bin/tat
+* ## enter this into tat
+* tmux new-session -As "$(basename "$PWD" | tr . -)"
 
 # make sure this in your ~/.zshenv`
 # `export PATH="$HOME/.bin:/usr/local/sbin:$HOME/bin/:$PATH" `

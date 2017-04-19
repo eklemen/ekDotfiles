@@ -26,20 +26,12 @@ brew install php71 --with-apache
 ///////////// Above has been added to brew.sh /////////////////
 ///////////////////////////////////////////////////////////////
 
+############# Start vim
 # Setting up VIM
-## Symlink vim and tmux to home ~
+## Symlink vim to home ~
 ln -s vim/.vimrc ~/.vimrc
-ln -s vim/.tmux.conf ~/.tmux.conf
-ln -s vim/.bin ~/.bin
-* ## tmux setup
-* mkdir ~/.bin
-* touch ~/.bin/tat && sudo vim ~/.bin/tat
-* chmod u+x ~/.bin/tat
-* ## enter this into tat
-* tmux new-session -As "$(basename "$PWD" | tr . -)"
+############# end vim
 
-# make sure this in your ~/.zshenv`
-# `export PATH="$HOME/.bin:/usr/local/sbin:$HOME/bin/:$PATH" `
 
 sudo vim /etc/apache2/httpd.conf
 # Search for php5_module (should be near line 171) and edit the httpd.conf

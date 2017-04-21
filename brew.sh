@@ -1,10 +1,11 @@
+#!/bin/bash
 if [[ `uname` == 'Darwin' ]]; then
   which -s brew
   if [[ $? != 0 ]]; then
     echo 'Installing Homebrew...'
       ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
       brew update
-      brew install git tree fasd yarn mysql nginx node ruby
+      brew install git tree fasd yarn mysql nginx node ruby gnupg gnupg2 python3 yarn
   fi
 
   echo 'Tweaking OS X...'

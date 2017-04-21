@@ -21,21 +21,21 @@ echo -e "Configuring git..."
 bash gitSetup.sh
 
 echo -e "Setting up zsh and prezto..."
-preztoSetup.sh
+bash preztoSetup.sh
 
 echo -e "Setting up Ruby..."
-rubySetup.sh
+bash rubySetup.sh
 
 echo -e "Setting up NVM..."
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
 echo -e "Installing Node..."
-nvm install node
-echo -e "Set NVM default by using:\n"
+# nvm install node
+echo -e "Set NVM default by using:"
 echo -e "nvm alias default vx.x.x"
-read -ps "Press Enter to continue.\n"
+read -p "Press Enter to continue."
 
 
 # Setting php to use version 7 not 5
 echo "A few manual things left to do..."
 echo "Make sure we change the php settings${RESTORE}"
-sudo bash phpSetup.sh
+bash phpSetup.sh

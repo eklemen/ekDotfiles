@@ -16,7 +16,7 @@ echo -e "${BLUE}LoadModule php7_module /usr/local/opt/php71/libexec/apache2/libp
 echo -e "${RED}NOTE: After editing the httpd.conf file you will need to restart apache via"
 echo -e "${CYAN}sudo apachectl restart${RESTORE}"
 echo -e "See ${CYAN}http://w3bsmart.blogspot.com/2015/08/installing-php-7-on-os-x-yosemite.html${RESTORE} for more info."
-read -ps "Press Enter to launch a new tab and edit the httpd.conf file.\n"
+read -p "Press Enter to launch a new tab and edit the httpd.conf file.\n"
 
 
 # This will open a new terminal tab

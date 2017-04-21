@@ -2,11 +2,12 @@
 
 Finally getting around to piecing together some dotfiles/configs/setup scripts for a new machine.
 
-#### So far
+#### What is going on here:
 
-* Directory for JetBrains settings (WebStorm and PhpStorm)
-  * As it turns out exporting PhpStorm settings does not import into WebStorm
-* General scripts documented which will run installers package managers and git to get you up and running.
+Clone this repo `git@github.com:eklemen/ekDotfiles.git`
+
+Run `sudo setup.sh`
+
 
 #### Todo
 

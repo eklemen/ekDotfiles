@@ -7,28 +7,30 @@ GREEN='\033[00;32m'
 YELLOW='\033[00;33m'
 BLUE='\033[00;34m'
 CYAN='\033[00;36m'
+ME=$(whoami)
 
 echo "${GREEN}Running OSX defaults scripts..."
 sudo bash osx.sh
 echo "Installing brew, cask, and packages..."
-bash brew.sh
+sudo -u ${ME} bash brew.sh
 
 ## Link vimrc
 echo "Linking vimrc... bc reasons..."
-ln -s vim/.vimrc ~/.vimrc
+sudo -u ${ME} ln -s vim/.vimrc ~/.vimrc
 
 echo -e "Configuring git..."
-bash gitSetup.sh
+sudo -u ${ME} bash gitSetup.sh
 
 echo -e "Setting up zsh and prezto..."
-bash preztoSetup.sh
+sudo -u ${ME} bash preztoSetup.sh
 
 echo -e "Setting up Ruby..."
 bash rubySetup.sh
 
 echo -e "Setting up NVM..."
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+sudo -u ${ME} curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
 echo -e "Installing Node..."
+# do i need to download a specific version first?
 # nvm install node
 echo -e "Set NVM default by using:"
 echo -e "nvm alias default vx.x.x"

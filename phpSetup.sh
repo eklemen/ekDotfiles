@@ -18,9 +18,8 @@ echo -e "${CYAN}sudo apachectl restart${RESTORE}"
 echo -e "See ${CYAN}http://w3bsmart.blogspot.com/2015/08/installing-php-7-on-os-x-yosemite.html${RESTORE} for more info."
 read -p "Press Enter to launch a new tab and edit the httpd.conf file.\n"
 
-
 # This will open a new terminal tab
 osascript -e 'tell application "Terminal" to activate' -e 'tell application "System Events" to tell process "Terminal" to keystroke "t" using command down'
 echo "Waiting before launching vim..."
 sleep 6s
-sudo vim /etc/apache2/httpd.conf
+vim /etc/apache2/httpd.conf

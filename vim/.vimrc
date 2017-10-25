@@ -89,6 +89,9 @@ augroup vimrcEx
 
   " Enable spellchecking for Markdown
   autocmd FileType markdown setlocal spell
+  
+  " jsx syntax highlighting in js files
+  let g:jsx_ext_required = 0
 
   " Automatically wrap at 80 characters for Markdown
   autocmd BufRead,BufNewFile *.md setlocal textwidth=80

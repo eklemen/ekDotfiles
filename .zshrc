@@ -38,6 +38,7 @@ alias ll='ls -al'
 alias ide='open -a WebStorm ./'
 eval "$(fasd --init auto)"
 alias gplr='git pull --rebase'
+alias awsl='aws --endpoint-url=http://localhost:4566'
 
 # Export for  yarn
 export PATH="$PATH:`yarn global bin`"
@@ -53,6 +54,15 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 export PATH=${PATH}:/usr/local/mysql/bin/
 
+export PATH="$HOME/.deno/bin:$PATH"
+
 # tabtab source for packages
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+
+fpath=(~/.zsh $fpath)
+autoload -Uz compinit
+compinit -u
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
